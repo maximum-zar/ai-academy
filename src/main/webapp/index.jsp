@@ -37,6 +37,18 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
+	.slider-container label {
+		background-image: url("${pageContext.request.contextPath}/static/img/Sprites/RadioButton.png");
+		background-size: contains;
+		background-repeat: no-repeat;
+	}
+	#slide1:checked ~ .controls label:nth-of-type(1),
+	#slide2:checked ~ .controls label:nth-of-type(2), #slide3:checked ~
+	.controls label:nth-of-type(3), #slide4:checked ~ .controls label:nth-of-type(4),
+	#slide5:checked ~ .controls label:nth-of-type(5), #slide6:checked ~
+	.controls label:nth-of-type(6) {
+		background-image: url("${pageContext.request.contextPath}/static/img/Sprites/RadioButtonClLICKED.png");
+	}
 </style>
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/main.js"></script>
 </head>

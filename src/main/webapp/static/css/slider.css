@@ -14,24 +14,16 @@
 .slider-container label {
 	cursor: pointer;
 	display: inline-block;
-	height: 4px;
+	height: 16px;
 	margin: 25px 12px 0 16px;
 	position: relative;
-	width: 4px;
+	width: 16px;
 	-webkit-transition: background ease-in-out .5s;
 	-moz-transition: background ease-in-out .5s;
 	-o-transition: background ease-in-out .5s;
 	transition: background ease-in-out .5s;
 	border-radius: 50%;
 	z-index: 1000;
-}
-
-.slider-container label:hover, #slide1:checked ~ .controls label:nth-of-type(1),
-	#slide2:checked ~ .controls label:nth-of-type(2), #slide3:checked ~
-	.controls label:nth-of-type(3), #slide4:checked ~ .controls label:nth-of-type(4),
-	#slide5:checked ~ .controls label:nth-of-type(5), #slide6:checked ~
-	.controls label:nth-of-type(6) {
-	background: #000;
 }
 
 #slide1:checked ~ .slider>.slide1, #slide2:checked ~ .slider>.slide2,
@@ -43,19 +35,6 @@
 	-moz-transform: scale(1);
 	-o-transform: scale(1);
 	transform: scale(1);
-}
-
-.slider-container label::before {
-	border: 2px solid #000;
-	content: " ";
-	display: block;
-	height: 12px;
-	left: -4px;
-	position: absolute;
-	top: -4px;
-	width: 12px;
-	z-index: 0;
-	border-radius: 50%;
 }
 
 .slides {
