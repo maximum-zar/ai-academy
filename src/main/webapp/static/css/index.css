@@ -1,0 +1,25 @@
+.slides.slide1 {
+	background-image: url("../img/developer-unsplash.jpg");
+}
+
+.slides.slide2 {
+	background-image: url("../img/chatgpt-unsplash.jpg");
+}
+
+.slides.slide3 {
+	background-image: url("../img/python-unsplash.jpg");
+}
+
+.slides.slide4 {
+	background-image: url("../img/code-unsplash.jpg");
+}
+
+.slides.slide5 {
+	background-image: url("../img/tensorflow-wiki.png");
+}
+
+.slides.slide6 {
+	background-image: url("../img/exponent.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}

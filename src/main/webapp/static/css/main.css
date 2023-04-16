@@ -1,0 +1,82 @@
+header {
+	width: 100%;
+	clear: both;
+	padding: 10px 2px;
+}
+
+h1 {
+	font-weight: 500;
+}
+
+.menubar {
+	background-color: rgb(3, 3, 101);
+	width: 100%;
+	height: 25px;
+	margin-bottom: 5px;
+	padding: 2px;
+}
+
+.menubar span {
+	color: white;
+	padding: 5px;
+}
+
+.menubar input[type="image"] {
+	cursor: pointer;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+.menubar .buttons {
+	float: right;
+}
+
+header nav {
+	float: left;
+	margin-left: 40px;
+}
+
+header ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+header .account {
+	float: right;
+	margin-right: 40px;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 2px;
+	background-color: #dadada;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	-moz-osx-font-smoothing: grayscale;
+	border: 4px outset #000;
+}
+
+* {
+	color: #333;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header h1 {
+	width: fit-content;
+	margin: 0 auto;
+	color: #000;
+}
+
+header ul li {
+	margin-right: 10px;
+	display: inline-block;
+}

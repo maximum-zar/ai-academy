@@ -1,0 +1,10 @@
+.courses {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 100px auto 0;
+}
+
+.courses > * {
+	margin-bottom: 10px;
+}
