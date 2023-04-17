@@ -53,16 +53,8 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/main.js"></script>
 </head>
 <body>
-	<div class="menubar">
-	<span>AI-Academy</span>
-	<div class="buttons">
-		<input type="image" src="${pageContext.request.contextPath}/static/img/Sprites/MinimizeButton.png" id="btn-window-restore">
-		<input type="image" src="${pageContext.request.contextPath}/static/img/Sprites/FullScreenButton.png" id="btn-window-fullscreen">
-		<input type="image" src="${pageContext.request.contextPath}/static/img/Sprites/CancelButton.png" id="btn-window-close">
-	</div>
-	</div>
-	<div id="root">
 	<jsp:include page="WEB-INF/partials/header.jsp"></jsp:include>
+	<div id="root">
 	<div class="slider-container">
 		<input type="radio" name="point" id="slide1" checked> <input
 			type="radio" name="point" id="slide2"> <input type="radio"
@@ -74,7 +66,7 @@
 			<div class="slides slide2"></div>
 			<div class="slides slide3"></div>
 			<div class="slides slide4"></div>
-		`	<div class="slides slide5"></div>
+			<div class="slides slide5"></div>
 			<div class="slides slide6"></div>
 		</div>
 		<div class="controls">

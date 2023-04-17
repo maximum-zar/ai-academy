@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function addEvents() {
+	let openedDropdown = false;
 	document.getElementById("btn-window-close").onclick = () => {
 		window.close();
 		setTimeout(() => { // If browser blocks window.close
@@ -29,8 +30,33 @@ function addEvents() {
 		maxButton.style.filter = "";
 		maxButton.disabled = false;
 	}
+	const menu = document.querySelectorAll("nav > ul > li > button");
+	for (let button of menu) {
+		button.onclick = () => {
+			console.log(openedDropdown)
+			if (openedDropdown)
+				closeDropdowns()
+				
+			button.nextElementSibling.classList.toggle("dropdown-show");
+			openedDropdown = true;
+		}
+	}
+	
+	window.addEventListener("click", event => {
+		if (!event.target.matches("nav>ul>li>button"))
+			closeDropdowns();
+			openedDropdown = false;
+	})
 }
 
+function closeDropdowns() {
+		let dropdowns = document.querySelectorAll("nav > ul > li > ul");
+		for (let dropdown of dropdowns) {
+			if (dropdown.classList.contains('dropdown-show')) {
+				dropdown.classList.remove('dropdown-show');
+			}
+		}
+}
 function openFullscreen(elem) {
 	if (elem.requestFullscreen) {
 		elem.requestFullscreen();

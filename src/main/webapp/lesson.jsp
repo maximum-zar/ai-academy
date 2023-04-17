@@ -76,14 +76,6 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/main.js"></script>
 </head>
 <body>
-	<div class="menubar">
-	<span>AI-Academy</span>
-	<div class="buttons">
-		<input type="image" src="${pageContext.request.contextPath}/static/img/Sprites/MinimizeButton.png" id="btn-window-restore">
-		<input type="image" src="${pageContext.request.contextPath}/static/img/Sprites/FullScreenButton.png" id="btn-window-fullscreen">
-		<input type="image" src="${pageContext.request.contextPath}/static/img/Sprites/CancelButton.png" id="btn-window-close">
-	</div>
-	</div>
 	<jsp:include page="WEB-INF/partials/header.jsp"></jsp:include>
 	<div id="root">
 		<h1>Lesson 0. Test</h1>
